@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game</title>
+    <meta
+      name="description"
+      content="موقع ويب احترافي تم تطويره باستخدام HTML و CSS و JavaScript، يحتوي على تصميم متجاوب، تفاعلات ديناميكية، وتجربة مستخدم سلسة، ويعرض مهاراتي ومشاريعي في تطوير الويب."
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, Web Development, Front End, Responsive Design, Portfolio, Web Projects, UI, UX"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./Images/logo.svg" />
+    <link rel="stylesheet" href="CSS/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-info">
+        <div class="game-name">Hangman</div>
+        <div class="category">Word From: <span></span></div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="hangman-draw">
+          <div class="the-draw">
+            <div class="the-stand"></div>
+            <div class="the-hang"></div>
+            <div class="the-rope"></div>
+            <div class="the-man">
+              <div class="head"></div>
+              <div class="body"></div>
+              <div class="hands"></div>
+              <div class="legs"></div>
+            </div>
+          </div>
+        </div>
+        <div class="letters"></div>
+      </div>
+      <hr />
+      <div class="letters-guess"></div>
+    </div>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

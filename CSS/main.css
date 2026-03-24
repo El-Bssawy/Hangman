@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+  border: none;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url(../Images/hangman.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+h1 a {
+  text-decoration: none;
+  color: white;
+}
+.parent {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.parent .en a,
+.parent .ar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.parent .en a:hover,
+.parent .ar a:hover {
+  box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.parent .en a {
+  background-color: #009688;
+  margin-right: 35px;
+}
+.parent .ar a {
+  background-color: #0179cf;
+}
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 20px 0;
+  background-color: #333;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  footer {
+    font-size: 13px;
+  }
+}
